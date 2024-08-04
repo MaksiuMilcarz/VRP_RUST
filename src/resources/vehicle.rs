@@ -1,4 +1,4 @@
-use crate::customer::Customer;
+use crate::resources::customer::Customer;
 
 pub struct Vehicle{
     pub id: usize,

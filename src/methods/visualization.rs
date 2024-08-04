@@ -1,8 +1,8 @@
 use plotters::prelude::*;
 
-use crate::{customer::Customer, vehicle::Vehicle};
+use crate::resources::vehicle::Vehicle;
 
-pub fn visualize_solution(customers: &Vec<Customer>, vehicles: &Vec<Vehicle>) {
+pub fn visualize_solution(vehicles: &Vec<Vehicle>) {
     let root_area = BitMapBackend::new("vrp_solution.png", (1024, 768))
         .into_drawing_area();
     root_area.fill(&WHITE).unwrap();

@@ -1,6 +1,6 @@
 use rand;
 
-use crate::{customer::Customer, point::Point, vehicle::Vehicle};
+use crate::resources::{customer::Customer, point::Point, vehicle::Vehicle};
 
 pub fn create_problem(num_customers: usize, num_vehicles: usize, capacity: u32) -> (Vec<Customer>, Vec<Vehicle>){
     let customers = create_customers(num_customers);

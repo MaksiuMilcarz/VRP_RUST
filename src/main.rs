@@ -1,9 +1,6 @@
 use std::collections::HashSet;
-use VRP_Rust::customer::Customer;
-use VRP_Rust::insertion::greedy_insertion;
-use VRP_Rust::setup::create_problem;
-use VRP_Rust::vehicle::Vehicle;
-use VRP_Rust::visualization::visualize_solution;
+
+use VRP_Rust::methods::{setup::create_problem, insertion::greedy_insertion, visualization::visualize_solution};
 
 fn main() {
     let num_customers: usize = 10;
@@ -29,6 +26,6 @@ fn main() {
     // improve the solution using: 
 
     // Visualize the solution
-    visualize_solution(&customers, &vehicles);
+    visualize_solution(&vehicles);
 }
 

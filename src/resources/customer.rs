@@ -1,4 +1,4 @@
-use crate::point::Point;
+use crate::resources::point::Point;
 
 
 #[derive(Clone)]

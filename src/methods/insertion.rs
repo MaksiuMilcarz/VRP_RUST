@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use crate::{customer::Customer, vehicle::Vehicle};
+use crate::resources::{customer::Customer, vehicle::Vehicle};
 
 // use greedy insertio but dont forget to also check for demand at each insertion
 pub fn greedy_insertion(customers: &Vec<Customer>, mut vehicles: Vec<Vehicle>, unassigned_customers: &HashSet<usize>) -> Vec<Vehicle>{
