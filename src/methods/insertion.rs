@@ -26,5 +26,11 @@ pub fn greedy_insertion(customers: &Vec<Customer>, mut vehicles: Vec<Vehicle>, u
         vehicles[best_vehicle].route.push(customers[best_customer].clone());
         unassigned_customers.remove(&best_customer);
     }
+
+    // insert hub at the end of each vehicle route
+    for v in &mut vehicles{
+        v.route.push(customers[customers.len()-1].clone());
+    }
+
     vehicles
 }
